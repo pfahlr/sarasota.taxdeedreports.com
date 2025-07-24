@@ -1,7 +1,7 @@
 {
 "$schema": "node_modules/wrangler/config-schema.json",
-"name":"sarasota-surplus-funds-leads",
-"compatibility_date":"2025-07-22",
+"name":"sarasota-taxdeedreports-com",
+"compatibility_date":"2025-07-24",
 "compatibility_flags": ["nodejs_compat"],
 "assets": {
   "directory": "./dist"
