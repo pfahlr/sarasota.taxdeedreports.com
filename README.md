@@ -1,20 +1,12 @@
-# blackspike astro landing page
-
-[<img src="public/theme-preview/github-preview.jpg" alt="screens showing theme parts on iPads" style="max-width: 100%; height: auto; width: 100%;" width="1600">](public/theme-preview/github-preview.jpg)
+# sarasota.taxdeedreports.com -- built using blackspike astro landing page
 
 ## A free, modern, [Astro](https://astro.build/) landing page theme made with [Tailwind](https://tailwindcss.com/) to help kick start your next Astro project
 
-We built this page as the first version of our own website, [blackspike.com](https://www.blackspike.com), but switched to a different design later.
+We built this page as the first version of our own website, [blackspike.com](https://www.blackspike.com), but switched to a different design later. Rather than let it gather dust, we decided to modernise it, try out some fresh new CSS features and give it back to the Astro community. You can read more about how we built it and the cool new tech we used [on our blog post](https://www.blackspike.com/blog/blackspike-free-astro-tailwind-theme/).
 
-Rather than let it gather dust, we decided to modernise it, try out some fresh new CSS features and give it back to the Astro community.
+[Download it from the Astro themes page](https://astro.build/themes/details/blackspike-astro-landing-page/)
 
-You can read more about how we built it and the cool new tech we used [on our blog post](https://www.blackspike.com/blog/blackspike-free-astro-tailwind-theme/).
-
-Now available as an official Astro theme! [Download it from the Astro themes page](https://astro.build/themes/details/blackspike-astro-landing-page/)
-
-## Live demo https://astro-theme.blackspike.com
-
-We hope you find it useful!
+Live demo [https://astro-theme.blackspike.com]
 
 ## License
 
@@ -43,18 +35,6 @@ Created by blackspike [blackspike design](https://www.blackspike.com) – a web 
 ## JS Features
 
 - [swiper.js](https://swiperjs.com/) carousel
-
-## Previews
-
-[<img src="public/theme-preview/blackspike-theme-1.jpg" alt="screenshot of dark theme landing page on desktop and on ipad browsers" style="max-width: 100%; height: auto; width: 100%;" width="1600">](public/theme-preview/blackspike-theme-1.jpg)
-
-[<img src="public/theme-preview/blackspike-theme-2.jpg" alt="screenshot of dark theme carousel slides with 3D backgrounds" style="max-width: 100%; height: auto; width: 100%;" width="1600">](public/theme-preview/blackspike-theme-2.jpg)
-
-[<img src="public/theme-preview/blackspike-theme-4.jpg" alt="screens showing theme parts" style="max-width: 100%; height: auto; width: 100%;" width="1600">](public/theme-preview/blackspike-theme-4.jpg)
-
-[<img src="public/theme-preview/blackspike-theme-5.jpg" alt="dark theme pricing section on laptop and iPhone browsers" style="max-width: 100%; height: auto; width: 100%;" width="1600">](public/theme-preview/blackspike-theme-5.jpg)
-
-[<img src="public/theme-preview/blackspike-theme-full.webp" alt="full page preview" style="max-width: 100%; height: auto; width: 100%;" width="1600">](public/theme-preview/blackspike-theme-full.webp)
 
 ## Credits
 
