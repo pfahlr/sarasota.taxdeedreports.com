@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Basic Access",
+    "tag": "Most popular",
+    "content": "Weekly Sarasota surplus fund case leads in CSV format",
+    "cta": "Get Started",
+    "price": 99,
+    "services": [
+      { "item": "Weekly CSV delivery of new cases" },
+      { "item": "Owner names and addresses" },
+      { "item": "Surplus amounts and sale dates" },
+      { "item": "Document links (PDFs)" },
+      { "item": "Up to 1 county included" }
+    ]
+  },
+  {
+    "title": "Pro Access",
+    "tag": "Best value",
+    "content": "Advanced filtering and multi-county support",
+    "cta": "Subscribe Now",
+    "price": 299,
+    "services": [
+      { "item": "Everything in Basic Access" },
+      { "item": "Access to 3 Florida counties" },
+      { "item": "Advanced filters: surplus > $5,000, recent sales, etc." },
+      { "item": "Live dashboard access (coming soon)" },
+      { "item": "Priority support + feature requests" }
+    ]
+  }
+]

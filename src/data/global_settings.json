@@ -1,0 +1,38 @@
+{
+  "title": "Sarasota Surplus Fund Leads",
+  "description": "Weekly surplus fund case leads from Sarasota County — parsed, filtered, and delivered to your inbox.",
+  "social_image": "/images/sarasota-social.jpg",
+  "base_url": "https://sarasota-surplus-funds-leads.absurditiesmediallc.workers.dev",
+  "demo": {
+    "title": "Need to see it?",
+    "content": "<strong>Get a free sample of several surplus case leads from Sarasota County</strong>, complete with owner info, disbursement data, and court documents when you sign up for our newsletter!",
+    "cta": "Get Sample Leads"
+  },
+  "theme_color": "#1e3a8a",
+  "nav": [
+    {
+      "title": "What You Get",
+      "link": "/#services"
+    },
+    {
+      "title": "Use Cases",
+      "link": "/#case-studies"
+    },
+    {
+      "title": "Pricing",
+      "link": "/#pricing"
+    }
+  ],
+
+  "social_links": [
+    {
+      "title": "FAQ",
+      "link": "/#faq"
+    },
+    {
+      "title": "Newsletter",
+      "link": "/#newsletter"
+    }
+
+  ]
+}

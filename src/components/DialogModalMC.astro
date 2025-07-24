@@ -1,0 +1,55 @@
+---
+
+import X from '../assets/theme-images/icon-x.svg'
+
+const { content } = Astro.props
+import MailchimpForm from "./MailchimpForm.astro";
+
+---
+  <dialog id="demo" class="fixed inset-0 bg-bs-surface-0 m-auto z-50 p-6 md:p-12 rounded-xl w-full max-w-[95%] md:max-w-lg">
+    <button onclick="this.closest('dialog').close('close')" aria-label="Close"
+        class="bs-btn rounded-full !p-0 flex items-center justify-center h-10 w-10"></button>
+  <!-- Form --> 
+
+    <MailchimpForm/>
+  </form>
+
+</dialog>
+
+<style>
+
+html:has(dialog[open]) {
+  overflow: hidden;
+  backdrop-filter: blur(0);
+  scrollbar-gutter: stable;
+}
+
+dialog[open]::backdrop {
+  backdrop-filter: blur(50px);
+}
+
+@keyframes scale-up {
+
+  to {
+    translate: 0 0;
+    scale: 1;
+  }
+
+}
+
+@media (prefers-reduced-motion: no-preference) {
+
+  dialog {
+    translate: 0 2rem;
+    scale: .8
+  }
+
+  dialog[open] {
+    animation: scale-up forwards 1s;
+    animation-timing-function: var(--ease-bs-spring);
+  }
+
+}
+
+
+</style>

@@ -1,0 +1,23 @@
+{
+  "name": "blackspike-astro-landing-page",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "astro dev --host",
+    "start": "astro dev",
+    "build": "astro build",
+    "postbuild": "echo '_worker.js\n_routes.json' > dist/.assetsignore",
+    "preview": "astro preview",
+    "astro": "astro",
+    "deploy": "npm run build && npx wrangler pages deploy ./dist",
+    "cf-typegen": "wrangler types"
+  },
+  "dependencies": {
+    "@astrojs/cloudflare": "^12.6.0",
+    "@tailwindcss/vite": "^4.1.11",
+    "astro": "^5.11.0",
+    "swiper": "^11.2.10",
+    "tailwindcss": "^4.1.11",
+    "wrangler": "^4.25.1"
+  }
+}

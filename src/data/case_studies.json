@@ -1,0 +1,32 @@
+[
+  {
+    "title": "From Listings to Leads.<br>Automated & Accurate.",
+    "sector": "Surplus Data Automation",
+    "content": "<strong>We helped a local investor eliminate 12+ hours a week spent clicking through Sarasota's tax deed site.</strong><br><br>Now they receive ready-to-claim surplus leads weekly — already parsed, filtered, and matched with owners.",
+    "case_study_link": "#subcription-form",
+    "cta": "Sign up for our Newsletter",
+    "image": "/content-images/surplus-landing-3.jpg",
+    "image_alt": "Screenshot of surplus fund data export",
+    "bg": "bg-gradient-to-r from-blue-600 to-teal-500"
+  },
+  {
+    "title": "Claim Faster.<br>Outreach Smarter.",
+    "sector": "Surplus Recovery",
+    "content": "<strong>One surplus recovery firm used our data to file two successful claims within 3 weeks.</strong><br><br>Access to verified owner addresses, parcel data, and linked PDFs made their process 10× more efficient.",
+    "case_study_link": "#subcription-form",
+    "cta": "Get sample leads!",
+    "image": "/content-images/surplus-landing-28.jpg",
+    "image_alt": "Sample surplus recovery document packet",
+    "bg": "bg-gradient-to-r from-indigo-600 to-purple-500"
+  },
+  {
+    "title": "Data That Pays You Back",
+    "sector": "Lead Generation",
+    "content": "<strong>Claim agents used our early-stage tax deed data to plan outreach before auctions even occurred.</strong><br><br>They now monitor upcoming opportunities — not just stale results — and close more deals, faster.",
+    "case_study_link": "/subscribe",
+    "cta": "Sign up today!",
+    "image": "/content-images/surplus-landing-26.jpg",
+    "image_alt": "Flow diagram of data collection to lead delivery",
+    "bg": "bg-gradient-to-r from-green-600 to-lime-500"
+  }
+]

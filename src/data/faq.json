@@ -1,0 +1,22 @@
+[
+  {
+    "question": "How often is the data updated?",
+    "answer": "We check for new Sarasota County surplus fund cases multiple times per week. Subscribers receive updated case data every Friday."
+  },
+  {
+    "question": "What formats do you deliver leads in?",
+    "answer": "We provide data in clean CSV format with parsed fields (case number, surplus amount, owner name/address, and document links). JSON export is also available for developers."
+  },
+  {
+    "question": "Are the documents included?",
+    "answer": "Yes. Each case includes links to official PDFs (e.g., claims, notices, sheriff letters) and filenames for local download. Premium tiers may include bundled ZIPs."
+  },
+  {
+    "question": "Do you cover counties other than Sarasota?",
+    "answer": "We currently specialize in Sarasota, but are expanding to additional Florida counties. Pro subscribers get early access to new regions as they go live."
+  },
+  {
+    "question": "Can I cancel anytime?",
+    "answer": "Absolutely. There's no long-term commitment — you can cancel your subscription at any time from your account settings or by contacting support."
+  }
+]
