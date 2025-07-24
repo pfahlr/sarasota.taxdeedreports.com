@@ -23,8 +23,9 @@ to get `npm run deploy` working with cloudflare pages, it was necessary to creat
   }
 }
 ```
-and edit `package.json`
-adding 2 new scripts
+
+and edit `package.json` adding 2 new scripts
+
 ```javascript
 "deploy": "astro build && wrangler deploy",
 "cf-typegen": "wrangler types"
@@ -39,17 +40,19 @@ but in order to get any workers to run, this needs to change to
 "cf-typegen": "wrangler types"
 ```
 
-and add and `.assetsignore` file under `./dist`
+which also adds an `.assetsignore` file under `./dist` 
 ```bash
 _worker.js
 _routes.json
 ```
+
 because `astro build` wipes out everything in the `dist` directory and `wrangler deploy` only handles the static assets. 
 
 you must also 
 ```bash
 npm install @astro/cloudflare
 ```
+
 and update `astro.config.mjs` to have **'adapter':cloudflare()** as a top level element in the object passed to `defineConfig()` like:
 ```javascript
 export default defineConfig({
