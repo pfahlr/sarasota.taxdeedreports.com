@@ -8,7 +8,7 @@ It used to be that in order to deploy changes to your cloudflare pages site, you
 
 to get `npm run deploy` working with cloudflare pages, it was necessary to create `wrangler.jsonc`:
 
-```json
+```javascript
 #./wrangler.jsonc
 {
 "$schema": "node_modules/wrangler/config-schema.json",
@@ -25,7 +25,7 @@ to get `npm run deploy` working with cloudflare pages, it was necessary to creat
 ```
 and edit `package.json`
 adding 2 new scripts
-```
+```javascript
 "deploy": "astro build && wrangler deploy",
 "cf-typegen": "wrangler types"
 ```
@@ -33,25 +33,25 @@ adding 2 new scripts
 
 but in order to get any workers to run, this needs to change to 
 
-```
+```javascript
 "postbuild": "echo '_worker.js\n_routes.json' > dist/.assetsignore",
 "deploy": "npm run build && npx wrangler pages deploy ./dist",
 "cf-typegen": "wrangler types"
 ```
 
 and add and `.assetsignore` file under `./dist`
-```
+```bash
 _worker.js
 _routes.json
 ```
 because `astro build` wipes out everything in the `dist` directory and `wrangler deploy` only handles the static assets. 
 
 you must also 
-```
+```bash
 npm install @astro/cloudflare
 ```
 and update `astro.config.mjs` to have **'adapter':cloudflare()** as a top level element in the object passed to `defineConfig()` like:
-```
+```javascript
 export default defineConfig({
   adapter:cloudflare(),
   vite: {
