@@ -3,9 +3,7 @@
 "name":"sarasota-taxdeedreports-com",
 "compatibility_date":"2025-07-24",
 "compatibility_flags": ["nodejs_compat"],
-"assets": {
-  "directory": "./dist"
-  },
+"pages_build_output_dir":"./dist",
 "observability": {
   "enabled": true
   }

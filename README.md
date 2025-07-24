@@ -16,13 +16,24 @@ to get `npm run deploy` working with cloudflare pages, it was necessary to creat
 "name":"sarasota-surplus-funds-leads",
 "compatibility_date":"2025-07-22",
 "compatibility_flags": ["nodejs_compat"],
-"assets": {
-  "directory": "./dist"
-  },
+"pages_build_output_dir":"./dist",
 "observability": {
   "enabled": true
   }
 }
+```
+
+note: if for some reason you want to change the name of the worker you deploy to, you need to change it here, but there's also a `.cache/wrangler` directory under `node_modules` that stores information relevant to this deployment operation. 
+
+```bash
+.
+./node_modules/wrangler
+./node_modules/wrangler/wrangler-account.json
+./node_modules/wrangler/pages.json
+```
+
+deleting `pages.json` will force a reset, deleting `wrangler-account.json` I imagine will require you to reauthenticate as it stores a token.
+
 ```
 
 and edit `package.json` adding 2 new scripts
@@ -72,6 +83,7 @@ export default defineConfig({
 ... and so on ...
 
 ```
+
 
 I just started working with server side operations with cloudflare pages, so my understanding of this feature is limited. And I found an alternative solution to the problem I was trying to solve using them before I got it working entirely, but I'm writing down these notes for the next time I encounter an opportunity to use them. 
 
