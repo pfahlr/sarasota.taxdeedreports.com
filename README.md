@@ -1,5 +1,70 @@
 # sarasota.taxdeedreports.com -- built using blackspike astro landing page
 
+## Dev notes
+
+### Cloudflare pages deploy.
+
+It used to be that in order to deploy changes to your cloudflare pages site, you would commit your changes to a github repository that you had specified when setting up the cloudflare pages site. Now, it is no longer necessary to do either. You can simply setup wrangler to deploy your site to cloudflare pages. The first time you run the `npm run deploy` script, the terminal will try to open a browser window and otherwise provide a link with a token that you can open and login to your cloudflare account and grant the script access to push content to a site (specified in the **"name"** element in `wrangler.jsonc`)
+
+to get `npm run deploy` working with cloudflare pages, it was necessary to create `wrangler.jsonc`:
+
+```json
+#./wrangler.jsonc
+{
+"$schema": "node_modules/wrangler/config-schema.json",
+"name":"sarasota-surplus-funds-leads",
+"compatibility_date":"2025-07-22",
+"compatibility_flags": ["nodejs_compat"],
+"assets": {
+  "directory": "./dist"
+  },
+"observability": {
+  "enabled": true
+  }
+}
+```
+and edit `package.json`
+adding 2 new scripts
+```
+"deploy": "astro build && wrangler deploy",
+"cf-typegen": "wrangler types"
+```
+### Cloudflare pages workers
+
+but in order to get any workers to run, this needs to change to 
+
+```
+"postbuild": "echo '_worker.js\n_routes.json' > dist/.assetsignore",
+"deploy": "npm run build && npx wrangler pages deploy ./dist",
+"cf-typegen": "wrangler types"
+```
+
+and add and `.assetsignore` file under `./dist`
+```
+_worker.js
+_routes.json
+```
+because `astro build` wipes out everything in the `dist` directory and `wrangler deploy` only handles the static assets. 
+
+you must also 
+```
+npm install @astro/cloudflare
+```
+and update `astro.config.mjs` to have **'adapter':cloudflare()** as a top level element in the object passed to `defineConfig()` like:
+```
+export default defineConfig({
+  adapter:cloudflare(),
+  vite: {
+    plugins: [tailwindcss()]
+  },
+... and so on ...
+
+```
+
+I just started working with server side operations with cloudflare pages, so my understanding of this feature is limited. And I found an alternative solution to the problem I was trying to solve using them before I got it working entirely, but I'm writing down these notes for the next time I encounter an opportunity to use them. 
+
+---
+
 ## A free, modern, [Astro](https://astro.build/) landing page theme made with [Tailwind](https://tailwindcss.com/) to help kick start your next Astro project
 
 We built this page as the first version of our own website, [blackspike.com](https://www.blackspike.com), but switched to a different design later. Rather than let it gather dust, we decided to modernise it, try out some fresh new CSS features and give it back to the Astro community. You can read more about how we built it and the cool new tech we used [on our blog post](https://www.blackspike.com/blog/blackspike-free-astro-tailwind-theme/).
