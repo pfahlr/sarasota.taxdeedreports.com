@@ -10,7 +10,7 @@
       { "item": "Owner names and addresses" },
       { "item": "Surplus amounts and sale dates" },
       { "item": "Document links (PDFs)" },
-      { "item": "Up to 1 county included" }
+      { "item": "basic subscription is per county" }
     ]
   },
   {
@@ -21,7 +21,7 @@
     "price": 299,
     "services": [
       { "item": "Everything in Basic Access" },
-      { "item": "Access to 3 Florida counties" },
+      { "item": "Access to all every county we monitor. Subscribe now and lock in this rate forever" },
       { "item": "Advanced filters: surplus > $5,000, recent sales, etc." },
       { "item": "Live dashboard access (coming soon)" },
       { "item": "Priority support + feature requests" }

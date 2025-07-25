@@ -1,19 +1,19 @@
 [
   {
     "question": "How often is the data updated?",
-    "answer": "We check for new Sarasota County surplus fund cases multiple times per week. Subscribers receive updated case data every Friday."
+    "answer": "We check for new Sarasota County surplus fund cases multiple times per week. Subscribers receive updated case data weekly."
   },
   {
     "question": "What formats do you deliver leads in?",
-    "answer": "We provide data in clean CSV format with parsed fields (case number, surplus amount, owner name/address, and document links). JSON export is also available for developers."
+    "answer": "We provide data in clean CSV format with parsed fields (case number, surplus amount, owner name/address, and document links). We can provide this data in other formats if you need. Don't hesitate to ask. If it's a simple fix, we can likely provide our data formatted to your specifications free of charge. We're also able to fulfill more complex customization requests on a contract basis. Send us a message, let's talk!"
   },
   {
     "question": "Are the documents included?",
-    "answer": "Yes. Each case includes links to official PDFs (e.g., claims, notices, sheriff letters) and filenames for local download. Premium tiers may include bundled ZIPs."
+    "answer": "Yes. Each case includes links to official PDFs (e.g., claims, notices, sheriff letters) and filenames for local download."
   },
   {
     "question": "Do you cover counties other than Sarasota?",
-    "answer": "We currently specialize in Sarasota, but are expanding to additional Florida counties. Pro subscribers get early access to new regions as they go live."
+    "answer": "We currently specialize in Sarasota, but are expanding to additional Florida counties. Pro subscribers get access to all regions. Early adopters are guaranteed access to all records, no matter how many counties we eventually cover at today's pro subscription rate for as long as our site exists. Is there a county your particularly interested in? Please let us know. We prioritize development based on customer demand."
   },
   {
     "question": "Can I cancel anytime?",
