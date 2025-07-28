@@ -4,9 +4,11 @@ import cloudflare from '@astrojs/cloudflare';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
+  site: 'https://taxdeedreports.com',
+  integrations: [sitemap()],
   adapter:cloudflare(),
   vite: {
-    plugins: [tailwindcss(), sitemap()]
+    plugins: [tailwindcss()]
   },
   experimental: {
     fonts: [{

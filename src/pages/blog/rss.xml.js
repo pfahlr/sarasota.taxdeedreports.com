@@ -4,7 +4,6 @@ import global_settings from "../../data/global_settings.json"
 
 export async function GET() {
 	const posts = await getCollection('blog');
-	console.log(posts);
 	return rss({
 		title: global_settings.title,
 		description: global_settings.description,
