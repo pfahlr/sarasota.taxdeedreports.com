@@ -1,20 +1,21 @@
 ---
 
 import Logo from '../assets/theme-images/logo.svg'
+import LogoText from '../assets/theme-images/logo-text.svg'
 
 const { settings } = Astro.props
 
 ---
 
-<header class="wrapper bg-loop font-semibold">
+<header class="wrapper bg-loop font-semibold mb-10">
 
   <!-- Wrapper -->
   <div class="bs-container py-6 flex justify-between items-center">
 
     <!-- Logo -->
-    <a class="flex xl:min-w-32 group" href="/" aria-label={ settings.title + ' - Home' }>
+    <a class="relative flex xl:min-w-32 group" href="/" aria-label={ settings.title + ' - Home' }>
 
-      <Logo class="group-hover:-rotate-180 group-hover:scale-80 transition-transform ease-bs-spring duration-1000" height="48" width="48" />
+      <LogoText class="absolute -top-10 w-32 h-32 lg:w-48 lg:h-48"  />
 
     </a>
 
