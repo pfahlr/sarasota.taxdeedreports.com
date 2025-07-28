@@ -1,11 +1,26 @@
 {
-  "title": "Sarasota Surplus Fund Leads",
-  "description": "Weekly surplus fund case leads from Sarasota County — parsed, filtered, and delivered to your inbox.",
+  "title": "Sarasota Tax Deed &amp; Surplus Fund Leads | Tax Deed Case Intel",
+  "description": "Weekly real estate tax deed surplus fund leads from Sarasota County, Florida. CSV delivery with owner names, property infomation, surplus amounts, sale dates, and court documents.",
   "social_image": "/images/sarasota-social.jpg",
-  "base_url": "https://sarasota-surplus-funds-leads.absurditiesmediallc.workers.dev",
+  "keywords":"sarasota surplus funds, florida tax deed leads, real estate, tax deed investor reports, tax surplus recovery, tax deed auctions, surplus claim data, property surplus florida, tax deed case data, realtdm property appraiser data, tax lien investment, surplus funds list, surplus fund information, tax deed information, accessible tax deed reports, csv tax deed data, Sarasota foreclosure data, Tax deed court records, Tax deed surplus claims, tax deed CSV",
+  "author":"TaxDeedReports.com",
+  "viewport":"width=device-width, initial-scale=1.0",
+  "robots":"index, follow",
+  "og_description":"High-quality surplus fund case data delivered weekly. Get owner info, surplus amounts, auction data, and PDF records in CSV format.",
+  "og_title":"Sarasota Tax Deed &amp; Surplus Fund Leads",
+  "og_type":"website",
+  "og_url":"https://taxdeedreports.com",
+  "og_image":"https://taxdeedreports.com/social-preview.jpg",
+  "base_url": "https://taxdeedreports.com",
+  "twitter_desc":"Sarasota surplus fund leads for tax deed case recovery and investor research.",
+  "twitter_image":"https://taxdeedreports.com/social-preview.jpg",
+  "twitter_card":"https://taxdeedreports.com/summary-image-large.jpg",
+  "twitter_title":"Sarasota Tax Deed &amp; Surplus Fund Leads",
+
+
   "demo": {
     "title": "Need to see it?",
-    "content": "<strong>Get a free sample of several surplus case leads from Sarasota County</strong>, complete with owner info, disbursement data, and court documents when you sign up for our newsletter!",
+    "content": "<strong>Get a free sample of several tax deed / surplus case leads from Sarasota County</strong>, complete with owner info, disbursement data, court documents and property info when you sign up for our newsletter!",
     "cta": "Get Sample Leads"
   },
   "theme_color": "#1e3a8a",

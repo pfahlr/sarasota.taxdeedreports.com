@@ -30,22 +30,66 @@ const { title, description } = Astro.props
 
     <title>{ title ?? global_settings.title }</title>
 
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="TaxDeedReports.com" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
 
     <meta name="description" content={ description ?? global_settings.description } />
     <meta name="theme-color" content={ global_settings.theme_color } />
-
-    <meta property="og:title" content={ title ?? global_settings.title } />
-    <meta property="og:description" content={ description ?? global_settings.description } />
-    <meta
-      property="og:image"
-      content={ global_settings.base_url + global_settings.social_image }
-    />
-
+    <meta name="keywords" content={ global_settings.keywords }/>
+    <meta name="author" content={ global_settings.author } >
+    <meta name="viewport" content={ global_settings.viewport } >
+    <meta name="robots" content={ global_settings.robots } >
+    <meta property="og:title" content={ global_settings.og_title } >
+    <meta property="og:description" content={ global_settings.og_description } >
+    <meta property="og:image" content={ global_settings.og_image }>
+    <meta property="og:type" content={ global_settings.og_type }>
+    <meta property="og:url" content={ global_settings.og_url }>
+    <meta name="twitter:card" content={ global_settings.twitter_card }>
+    <meta name="twitter:title" content={ global_settings.twitter_title }>
+    <meta name="twitter:description" content={ global_settings.twitter_description }>
+    <meta name="twitter:image" content={ global_settings.twitter_image }>
+    
     <Font cssVariable="--font-inter" preload />
     <Font cssVariable="--font-inter-display" preload />
-
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Sarasota Tax Deed &amp; Surplus Fund Leads | Tax Deed Case Intel",
+      "image": "https://taxdeedreports.com/social-preview.jpg",
+      "description": "Weekly real estate tax deed surplus fund leads from Sarasota County, Florida. CSV delivery with owner names, property infomation, surplus amounts, sale dates, and court documents.",
+      "brand": {
+        "@type": "Brand",
+        "name": "TaxDeedReports.com"
+      },
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "One County Access",
+          "url": "https://taxdeedreports.com/subscribe/one-county",
+          "priceCurrency": "USD",
+          "price": "99",
+          "priceValidUntil": "2025-12-31",
+          "itemCondition": "https://schema.org/NewCondition",
+          "availability": "https://schema.org/InStock"
+        },
+        {
+          "@type": "Offer",
+          "name": "Pro Access - All Counties",
+          "url": "https://taxdeedreports.com/subscribe/all-access",
+          "priceCurrency": "USD",
+          "price": "299",
+          "priceValidUntil": "2025-12-31",
+          "itemCondition": "https://schema.org/NewCondition",
+          "availability": "https://schema.org/InStock"
+        }
+      ]
+    }
+    </script>
   </head>
 
   <body id="top">
