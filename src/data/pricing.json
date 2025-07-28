@@ -1,30 +1,32 @@
+
 [
   {
-    "title": "Basic Access",
-    "tag": "Most popular",
-    "content": "Weekly Sarasota surplus fund case leads in CSV format",
+    "title": "One County Access",
+    "tag": "Entry Tier",
+    "content": "Weekly surplus fund leads from one Florida county.",
     "cta": "Get Started",
     "price": 99,
     "services": [
-      { "item": "Weekly CSV delivery of new cases" },
-      { "item": "Owner names and addresses" },
-      { "item": "Surplus amounts and sale dates" },
-      { "item": "Document links (PDFs)" },
-      { "item": "basic subscription is per county" }
+      { "item": "Weekly CSV delivery of new surplus cases" },
+      { "item": "Owner names, mailing addresses, and parcel info" },
+      { "item": "Surplus balances, legal descriptions, sale dates" },
+      { "item": "Document links (PDFs) included" },
+      { "item": "Choose one county to monitor" }
     ]
   },
   {
-    "title": "Pro Access",
-    "tag": "Best value",
-    "content": "Advanced filtering and multi-county support",
-    "cta": "Subscribe Now",
+    "title": "Pro Access: All Counties",
+    "tag": "Best Value",
+    "content": "Full access to all supported Florida counties, filters, and upcoming dashboard tools.",
+    "cta": "Upgrade to Pro",
     "price": 299,
     "services": [
-      { "item": "Everything in Basic Access" },
-      { "item": "Access to all every county we monitor. Subscribe now and lock in this rate forever" },
-      { "item": "Advanced filters: surplus > $5,000, recent sales, etc." },
+      { "item": "Access to all current and future counties" },
+      { "item": "Advanced filtering and surplus alerts" },
+      { "item": "Custom CSV reports and grouped PDFs" },
       { "item": "Live dashboard access (coming soon)" },
-      { "item": "Priority support + feature requests" }
+      { "item": "Priority support + onboarding assistance" }
     ]
   }
 ]
+
