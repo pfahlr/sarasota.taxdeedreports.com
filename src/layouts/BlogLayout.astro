@@ -26,8 +26,7 @@ const { title, description, keywords, url } = Astro.props
   <head>
 
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-
+    
     <title>{ title ?? global_settings.title }</title>
     <link rel="sitemap" href="/sitemap-index.xml" />
 
@@ -50,7 +49,7 @@ const { title, description, keywords, url } = Astro.props
     <meta property="og:type" content={ global_settings.og_type }>
     <meta property="og:url" content={ url ?? global_settings.og_url }>
     <meta name="twitter:card" content={ global_settings.twitter_card }>
-    <meta name="twitter:title" content={ global_settings.twitter_title }>
+    <meta name="twitter:title" content={ title ?? global_settings.twitter_title }>
     <meta name="twitter:description" content={ description ?? global_settings.twitter_description }>
     <meta name="twitter:image" content={ global_settings.twitter_image }>
     

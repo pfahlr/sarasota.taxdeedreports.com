@@ -1,0 +1,26 @@
+---
+import BlogLayout from "../../layouts/BlogLayout.astro";
+import { getCollection } from 'astro:content';
+import global_settings from "../../data/global_settings.json"
+import BlogPostCard from "../../components/BlogPostCard.astro";
+import PostList from "../../components/PostList.astro";
+
+var posts = {};
+try {
+  posts = await getCollection("blog");
+} catch (err) {
+  console.error("Error loading blog posts:", err);
+}
+const title = "Blog |"+global_settings.title;
+console.log(posts);
+---
+<BlogLayout title ={title}  >
+<PostList> 
+	{posts.map(item => (
+		<BlogPostCard id={item.id}  description={item.data.description} pubdate={item.data.pubDate} title={item.data.title}  />
+	))}
+</PostList>
+</BlogLayout>
+
+
+
