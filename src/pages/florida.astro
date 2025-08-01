@@ -65,5 +65,39 @@ import testimonials from "../data/florida/testimonials.json"
   />
 
   <NewsletterSectionExternalForm newsletter={newsletter}/>
-
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Florida Tax Deed & Surplus Fund Leads | Tax Deed Case Intel",
+      "image": "https://taxdeedreports.com/social-preview.jpg",
+      "description": "Weekly real estate tax deed surplus fund leads from Florida. CSV delivery with owner names, property infomation, surplus amounts, sale dates, and court documents.",
+      "brand": {
+        "@type": "Brand",
+        "name": "TaxDeedReports.com"
+      },
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "One County Access",
+          "url": "https://taxdeedreports.com/subscribe/one-county",
+          "priceCurrency": "USD",
+          "price": "99",
+          "priceValidUntil": "2025-12-31",
+          "itemCondition": "https://schema.org/NewCondition",
+          "availability": "https://schema.org/InStock"
+        },
+        {
+          "@type": "Offer",
+          "name": "Pro Access - All Counties",
+          "url": "https://taxdeedreports.com/subscribe/all-access",
+          "priceCurrency": "USD",
+          "price": "299",
+          "priceValidUntil": "2025-12-31",
+          "itemCondition": "https://schema.org/NewCondition",
+          "availability": "https://schema.org/InStock"
+        }
+      ]
+    }
+    </script>
 </Layout>
