@@ -16,7 +16,7 @@ import global_settings from "../data/global_settings.json"
 import DialogModalMC from "../components/DialogModalMC.astro"
 import FooterMain from "../components/FooterMain.astro"
 import HeaderMain from "../components/HeaderMain.astro"
-
+import BubbleBackground from "../components/BubbleBackground.astro";
 const { title, description, keywords, url } = Astro.props
 
 ---
@@ -97,9 +97,10 @@ const { title, description, keywords, url } = Astro.props
 
     <!-- Skip link -->
     <a class="fixed -top-20 focus-visible:top-0 p-3 bg-black/90 transition-all duration-300" href="#main">Skip to content</a>
-
+    <BubbleBackground/>
     <!-- bg image -->
-    <Image src={ bg_image } alt="" format="avif" height={1080} width={1920} class="absolute min-h-svh object-cover inset-0 bottom-auto -z-1 w-full h-auto opacity-20 mask-b-from-50%" loading="eager" />
+    
+    <!--<Image src={ bg_image } alt="" format="avif" height={1080} width={1920} class="absolute min-h-svh object-cover inset-0 bottom-auto -z-1 w-full h-auto opacity-20 mask-b-from-50%" loading="eager" />-->
 
     <!-- Header -->
     <HeaderMain settings={ global_settings } />

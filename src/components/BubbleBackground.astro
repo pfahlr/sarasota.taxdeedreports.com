@@ -1,0 +1,172 @@
+---
+// No frontmatter needed
+---
+
+<style>
+  #bubbleCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+  }
+</style>
+
+<canvas id="bubbleCanvas"></canvas>
+
+<script type="module">
+  const canvas = document.getElementById("bubbleCanvas");
+  const ctx = canvas.getContext("2d");
+
+  let width = window.innerWidth;
+  let height = window.innerHeight;
+  canvas.width = width;
+  canvas.height = height;
+
+  window.addEventListener("resize", () => {
+    width = canvas.width = window.innerWidth;
+    height = canvas.height = window.innerHeight;
+  });
+
+  const FPS = 30;
+  const bubbles = [];
+  const numBubbles = 40;
+  const colors = [
+    'rgba(10,27,120,OPACITY)',
+    'rgba(0,122,40,OPACITY)',
+    'rgba(120 ,10,50,OPACITY)',
+    'rgba(200,200,0,OPACITY)',
+    'rgba(0,100,0,OPACITY)',
+    'rgba(255,34,0,OPACITY)'
+  ];
+
+  class Bubble {
+    constructor() {
+      this.reset(true);
+    }
+
+    reset(initial = false) {
+      this.x = (Math.random() - 0.5) * width;
+      this.y = (Math.random() - 0.5) * height;
+      this.z = initial ? Math.random() * 2 : 2;
+      this.vx = ((Math.random() - 0.5) * 0.1);
+      this.vy = ((Math.random() - 0.5) * 0.1);
+      this.vz = -0.001;
+      this.radius = Math.random() * 10 + 20;
+      this.opacity = 0.05 + Math.random() * 0.5;
+      this.color = colors[Math.floor(Math.random() * colors.length)];
+    }
+
+    update() {
+      console.log(this.vx);
+      this.x += this.vx / this.z;
+      this.y += this.vy / this.z;
+      this.z += this.vz;
+
+      if (
+        this.z <= 0.1 ||
+        this.x < -width ||
+        this.x > width ||
+        this.y < -height ||
+        this.y > height
+      ) {
+        this.reset();
+      }
+
+      this.vx += ((Math.random() - 0.5) * 0.135);
+      this.vy += ((Math.random() - 0.5) * 0.135);
+    }
+
+    draw() {
+      const scale = 0.5 / this.z;
+      const x2d = width / 2 + this.x * scale;
+      const y2d = height / 2 + this.y * scale;
+      const r = this.radius * scale;
+
+      ctx.beginPath();
+      ctx.arc(x2d, y2d, r, 0, Math.PI * 2);
+      ctx.fillStyle = this.color.replace(
+        'OPACITY',
+        (this.opacity * scale).toFixed(3)
+      );
+      ctx.fill();
+    }
+   draw_shaded() {
+     const scale = 0.5 / this.z;
+      const x2d = width / 2 + this.x * scale;
+      const y2d = height / 2 + this.y * scale;
+      const r = this.radius * scale;
+      const opacity = Math.min(1, this.opacity * scale);
+
+      const gradient = ctx.createRadialGradient(x2d, y2d, 0, x2d, y2d, r);
+      gradient.addColorStop(0, this.color.replace('OPACITY', (opacity * 2).toFixed(3)));
+      gradient.addColorStop(1, this.color.replace('OPACITY', '0.0'));
+
+      ctx.beginPath();
+      ctx.arc(x2d, y2d, r, 0, Math.PI * 2);
+      ctx.fillStyle = gradient;
+      ctx.fill();
+   }
+  
+  draw_shaded_fixed_light(){
+    const light = { x: 0, y: 0, z: -100 }; // top-left-front
+    const scale = 0.5 / this.z;
+    const x2d = width / 2 + this.x * scale;
+    const y2d = height / 2 + this.y * scale;
+    const r = this.radius * scale;
+    const opacity = Math.min(1, this.opacity * scale);
+
+    // Calculate direction from bubble to light
+    const dx = light.x - this.x;
+    const dy = light.y - this.y;
+    const dz = light.z - this.z;
+    const dist = Math.sqrt(dx*dx + dy*dy + dz*dz);
+    const norm = { x: dx/dist, y: dy/dist, z: dz/dist };
+
+    // Use the normalized light vector to shift the highlight
+    const highlightOffsetX = norm.x * r * 0.5;
+    const highlightOffsetY = norm.y * r * 0.5;
+
+    const gradient = ctx.createRadialGradient(
+      x2d + highlightOffsetX,
+      y2d + highlightOffsetY,
+      0,
+      x2d,
+      y2d,
+      r
+    );
+
+    gradient.addColorStop(0, this.color.replace('OPACITY', (opacity * 1.2).toFixed(3)));
+    gradient.addColorStop(1, this.color.replace('OPACITY', '0.0'));
+
+    ctx.beginPath();
+    ctx.arc(x2d, y2d, r, 0, Math.PI * 2);
+    ctx.fillStyle = gradient;
+    ctx.fill();
+
+    // Optional highlight "glint"
+    ctx.beginPath();
+    ctx.arc(x2d + highlightOffsetX, y2d + highlightOffsetY, r * 0.1, 0, Math.PI * 2);
+    ctx.fillStyle = `rgba(255, 255, 255, ${(opacity * 0.2).toFixed(3)})`;
+    ctx.fill();
+    }
+
+  }
+
+  for (let i = 0; i < numBubbles; i++) {
+    bubbles.push(new Bubble());
+  }
+
+  function draw() {
+    ctx.clearRect(0, 0, width, height);
+    for (let b of bubbles) {
+      b.update();
+      b.draw();
+      b.draw_shaded_fixed_light();
+    }
+  }
+
+  setInterval(draw, 1000 / FPS);
+</script>
