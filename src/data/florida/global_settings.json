@@ -1,0 +1,58 @@
+{
+  "title": "Florida Tax Deed & Surplus Fund Leads | Tax Deed Case Intel",
+  "description": "Weekly real estate tax deed surplus fund leads from counties throughout Florida. CSV delivery with owner names, property infomation, surplus amounts, sale dates, and court documents.",
+  "social_image": "/images/sarasota-social.jpg",
+  "keywords":"Florida tax deed records, Florida tax deed leads, Florida real estate,Florida tax deed investor reports, Florida tax surplus recovery, Florida tax deed auctions, surplus claim data, property surplus florida, Florida tax deed case data, Florida realtdm property appraiser data, Florida tax lien investment, Florida surplus funds list, Florida surplus fund information, tax deed information, accessible Florida tax deed reports, csv tax deed data, Florida foreclosure data,Florida tax deed court records, Florida tax deed surplus claims, Florida tax deed CSV",
+  "author":"TaxDeedReports.com",
+  "viewport":"width=device-width, initial-scale=1.0",
+  "robots":"index, follow",
+  "og_description":"High-quality surplus fund case data delivered weekly. Get owner info, surplus amounts, auction data, and PDF records in CSV format.",
+  "og_title":"Florida Tax Deed & Surplus Fund Leads",
+  "og_type":"website",
+  "og_url":"https://taxdeedreports.com",
+  "og_image":"https://taxdeedreports.com/social-preview.jpg",
+  "base_url": "https://taxdeedreports.com",
+  "twitter_desc":"Florida surplus fund leads for tax deed case recovery and investor research.",
+  "twitter_image":"https://taxdeedreports.com/social-preview.jpg",
+  "twitter_card":"https://taxdeedreports.com/summary-image-large.jpg",
+  "twitter_title":"Florida Tax Deed &amp; Surplus Fund Leads",
+
+
+  "demo": {
+    "title": "Need to see it?",
+    "content": "<strong>Get a free sample of several tax deed / surplus case leads from Sarasota County</strong>, complete with owner info, disbursement data, court documents and property info when you sign up for our newsletter!",
+    "cta": "Get Sample Leads"
+  },
+  "theme_color": "#1e3a8a",
+  "nav": [
+    {
+      "title": "Blog",
+      "link": "/blog"
+    },
+    {
+      "title": "What You Get",
+      "link": "/#services"
+    },
+    {
+      "title": "Use Cases",
+      "link": "/#case-studies"
+    },
+    {
+      "title": "Pricing",
+      "link": "/#pricing"
+    }
+  ],
+
+  "social_links": [
+
+    {
+      "title": "FAQ",
+      "link": "/#faq"
+    },
+    {
+      "title": "Newsletter",
+      "link": "/#newsletter"
+    }
+
+  ]
+}

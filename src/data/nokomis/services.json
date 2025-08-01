@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Track surplus cases before anyone else",
+    "content": "<strong>We monitor Nokomis tax deed cases as soon as they're filed.</strong> Know which properties are heading to auction — before the surplus hits.",
+    "cta": "Explore case tracking",
+    "image": "/content-images/surplus-landing-39.jpg",
+    "image_alt": "Surplus tracking dashboard screenshot"
+  },
+  {
+    "title": "Structured data with zero cleanup",
+    "content": "<strong>We extract every useful field from messy county websites.</strong> Owner addresses, PDFs, parcel IDs — all normalized, deduplicated, and CSV-ready.",
+    "cta": "View a sample export",
+    "image": "/content-images/surplus-landing-36.jpg",
+    "image_alt": "Clean CSV export screenshot"
+  },
+  {
+    "title": "Documents and leads in one place",
+    "content": "<strong>No more chasing PDFs or reverse searching owners.</strong> All court filings, case logs, and claim docs come with each lead — pre-sorted and downloadable.",
+    "cta": "Try a free case bundle",
+    "image": "/content-images/surplus-landing-34.jpg",
+    "image_alt": "Folder of case PDFs"
+  },
+  {
+    "title": "Built for surplus recovery agents",
+    "content": "<strong>This isn't a generic data scraper.</strong> It's purpose-built for claim professionals, investors, and researchers looking to act fast — and win fast.",
+    "cta": "See how it works",
+    "image": "/content-images/surplus-landing-49.jpg",
+    "image_alt": "Tools for surplus recovery professionals"
+  }
+]

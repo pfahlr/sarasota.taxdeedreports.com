@@ -1,0 +1,58 @@
+{
+  "title": "Siesta Key Tax Deed & Surplus Fund Leads | Tax Deed Case Intel",
+  "description": "Weekly real estate tax deed surplus fund leads from counties throughout Siesta Key. CSV delivery with owner names, property infomation, surplus amounts, sale dates, and court documents.",
+  "social_image": "/images/sarasota-social.jpg",
+  "keywords":"Siesta Key tax deed records, Siesta Key tax deed leads, Siesta Key real estate,Siesta Key tax deed investor reports, Siesta Key tax surplus recovery, Siesta Key tax deed auctions, surplus claim data, property surplus florida, Siesta Key tax deed case data, Siesta Key realtdm property appraiser data, Siesta Key tax lien investment, Siesta Key surplus funds list, Siesta Key surplus fund information, tax deed information, accessible Siesta Key tax deed reports, csv tax deed data, Siesta Key foreclosure data,Siesta Key tax deed court records, Siesta Key tax deed surplus claims, Siesta Key tax deed CSV",
+  "author":"TaxDeedReports.com",
+  "viewport":"width=device-width, initial-scale=1.0",
+  "robots":"index, follow",
+  "og_description":"High-quality surplus fund case data delivered weekly. Get owner info, surplus amounts, auction data, and PDF records in CSV format.",
+  "og_title":"Siesta Key Tax Deed & Surplus Fund Leads",
+  "og_type":"website",
+  "og_url":"https://taxdeedreports.com",
+  "og_image":"https://taxdeedreports.com/social-preview.jpg",
+  "base_url": "https://taxdeedreports.com",
+  "twitter_desc":"Siesta Key surplus fund leads for tax deed case recovery and investor research.",
+  "twitter_image":"https://taxdeedreports.com/social-preview.jpg",
+  "twitter_card":"https://taxdeedreports.com/summary-image-large.jpg",
+  "twitter_title":"Siesta Key Tax Deed &amp; Surplus Fund Leads",
+
+
+  "demo": {
+    "title": "Need to see it?",
+    "content": "<strong>Get a free sample of several tax deed / surplus case leads from Sarasota County</strong>, complete with owner info, disbursement data, court documents and property info when you sign up for our newsletter!",
+    "cta": "Get Sample Leads"
+  },
+  "theme_color": "#1e3a8a",
+  "nav": [
+    {
+      "title": "Blog",
+      "link": "/blog"
+    },
+    {
+      "title": "What You Get",
+      "link": "/#services"
+    },
+    {
+      "title": "Use Cases",
+      "link": "/#case-studies"
+    },
+    {
+      "title": "Pricing",
+      "link": "/#pricing"
+    }
+  ],
+
+  "social_links": [
+
+    {
+      "title": "FAQ",
+      "link": "/#faq"
+    },
+    {
+      "title": "Newsletter",
+      "link": "/#newsletter"
+    }
+
+  ]
+}

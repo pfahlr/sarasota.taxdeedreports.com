@@ -1,0 +1,58 @@
+{
+  "title": "Largo Tax Deed & Surplus Fund Leads | Tax Deed Case Intel",
+  "description": "Weekly real estate tax deed surplus fund leads from counties throughout Largo. CSV delivery with owner names, property infomation, surplus amounts, sale dates, and court documents.",
+  "social_image": "/images/sarasota-social.jpg",
+  "keywords":"Largo tax deed records, Largo tax deed leads, Largo real estate,Largo tax deed investor reports, Largo tax surplus recovery, Largo tax deed auctions, surplus claim data, property surplus florida, Largo tax deed case data, Largo realtdm property appraiser data, Largo tax lien investment, Largo surplus funds list, Largo surplus fund information, tax deed information, accessible Largo tax deed reports, csv tax deed data, Largo foreclosure data,Largo tax deed court records, Largo tax deed surplus claims, Largo tax deed CSV",
+  "author":"TaxDeedReports.com",
+  "viewport":"width=device-width, initial-scale=1.0",
+  "robots":"index, follow",
+  "og_description":"High-quality surplus fund case data delivered weekly. Get owner info, surplus amounts, auction data, and PDF records in CSV format.",
+  "og_title":"Largo Tax Deed & Surplus Fund Leads",
+  "og_type":"website",
+  "og_url":"https://taxdeedreports.com",
+  "og_image":"https://taxdeedreports.com/social-preview.jpg",
+  "base_url": "https://taxdeedreports.com",
+  "twitter_desc":"Largo surplus fund leads for tax deed case recovery and investor research.",
+  "twitter_image":"https://taxdeedreports.com/social-preview.jpg",
+  "twitter_card":"https://taxdeedreports.com/summary-image-large.jpg",
+  "twitter_title":"Largo Tax Deed &amp; Surplus Fund Leads",
+
+
+  "demo": {
+    "title": "Need to see it?",
+    "content": "<strong>Get a free sample of several tax deed / surplus case leads from Sarasota County</strong>, complete with owner info, disbursement data, court documents and property info when you sign up for our newsletter!",
+    "cta": "Get Sample Leads"
+  },
+  "theme_color": "#1e3a8a",
+  "nav": [
+    {
+      "title": "Blog",
+      "link": "/blog"
+    },
+    {
+      "title": "What You Get",
+      "link": "/#services"
+    },
+    {
+      "title": "Use Cases",
+      "link": "/#case-studies"
+    },
+    {
+      "title": "Pricing",
+      "link": "/#pricing"
+    }
+  ],
+
+  "social_links": [
+
+    {
+      "title": "FAQ",
+      "link": "/#faq"
+    },
+    {
+      "title": "Newsletter",
+      "link": "/#newsletter"
+    }
+
+  ]
+}

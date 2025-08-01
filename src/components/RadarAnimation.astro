@@ -73,6 +73,10 @@
     ctx.translate(cx, cy);
 
     localBlips.forEach((blip) => {
+      blip.x+=blip.vx;
+      blip.y+=blip.vy;
+      if(Math.random() > .99){blip.vy=-blip.vy;}
+      if(Math.random() > .99){blip.vx=-blip.vx;}
       const bx = blip.x;
       const by = blip.y;
       const angleToBlip = Math.atan2(by, bx);
@@ -91,9 +95,9 @@
         ctx.fill();
       }
     });
+
     ctx.restore();
   }
-
   function animate() {
     drawRadarBackground();
     drawSweepArm(angle);
@@ -109,9 +113,9 @@ createRadar({
   width: 256,
   height: 256,
   blips: [
-    { x: 15, y: 10 },
-    { x: -10, y: 20 },
-    { x: 5, y: -18 },
+    { x: 15, y: 10, vx:0.001, vy:0.02 },
+    { x: -10, y: 20,vx:0.001, vy:-0.02 },
+    { x: 5, y: -18, vx:-0.05, vy:0.009 },
   ],
 });
 </script>

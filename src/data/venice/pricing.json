@@ -1,0 +1,32 @@
+
+[
+  {
+    "title": "One County Access",
+    "tag": "Entry Tier",
+    "content": "Weekly surplus fund leads from one Florida county.",
+    "cta": "Get Started",
+    "price": 99,
+    "services": [
+      { "item": "Weekly CSV delivery of new surplus cases" },
+      { "item": "Owner names, mailing addresses, and parcel info" },
+      { "item": "Surplus balances, legal descriptions, sale dates" },
+      { "item": "Document links (PDFs) included" },
+      { "item": "Choose one county to monitor" }
+    ]
+  },
+  {
+    "title": "Pro Access: All Counties",
+    "tag": "Best Value",
+    "content": "Full access to all supported Florida counties, filters, and upcoming dashboard tools.",
+    "cta": "Upgrade to Pro",
+    "price": 299,
+    "services": [
+      { "item": "Access to all current and future counties" },
+      { "item": "Advanced filtering and surplus alerts" },
+      { "item": "Custom CSV reports and grouped PDFs" },
+      { "item": "Live dashboard access (coming soon)" },
+      { "item": "Priority support + onboarding assistance" }
+    ]
+  }
+]
+

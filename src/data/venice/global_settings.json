@@ -1,0 +1,58 @@
+{
+  "title": "Venice Tax Deed & Surplus Fund Leads | Tax Deed Case Intel",
+  "description": "Weekly real estate tax deed surplus fund leads from counties throughout Venice. CSV delivery with owner names, property infomation, surplus amounts, sale dates, and court documents.",
+  "social_image": "/images/sarasota-social.jpg",
+  "keywords":"Venice tax deed records, Venice tax deed leads, Venice real estate,Venice tax deed investor reports, Venice tax surplus recovery, Venice tax deed auctions, surplus claim data, property surplus florida, Venice tax deed case data, Venice realtdm property appraiser data, Venice tax lien investment, Venice surplus funds list, Venice surplus fund information, tax deed information, accessible Venice tax deed reports, csv tax deed data, Venice foreclosure data,Venice tax deed court records, Venice tax deed surplus claims, Venice tax deed CSV",
+  "author":"TaxDeedReports.com",
+  "viewport":"width=device-width, initial-scale=1.0",
+  "robots":"index, follow",
+  "og_description":"High-quality surplus fund case data delivered weekly. Get owner info, surplus amounts, auction data, and PDF records in CSV format.",
+  "og_title":"Venice Tax Deed & Surplus Fund Leads",
+  "og_type":"website",
+  "og_url":"https://taxdeedreports.com",
+  "og_image":"https://taxdeedreports.com/social-preview.jpg",
+  "base_url": "https://taxdeedreports.com",
+  "twitter_desc":"Venice surplus fund leads for tax deed case recovery and investor research.",
+  "twitter_image":"https://taxdeedreports.com/social-preview.jpg",
+  "twitter_card":"https://taxdeedreports.com/summary-image-large.jpg",
+  "twitter_title":"Venice Tax Deed &amp; Surplus Fund Leads",
+
+
+  "demo": {
+    "title": "Need to see it?",
+    "content": "<strong>Get a free sample of several tax deed / surplus case leads from Sarasota County</strong>, complete with owner info, disbursement data, court documents and property info when you sign up for our newsletter!",
+    "cta": "Get Sample Leads"
+  },
+  "theme_color": "#1e3a8a",
+  "nav": [
+    {
+      "title": "Blog",
+      "link": "/blog"
+    },
+    {
+      "title": "What You Get",
+      "link": "/#services"
+    },
+    {
+      "title": "Use Cases",
+      "link": "/#case-studies"
+    },
+    {
+      "title": "Pricing",
+      "link": "/#pricing"
+    }
+  ],
+
+  "social_links": [
+
+    {
+      "title": "FAQ",
+      "link": "/#faq"
+    },
+    {
+      "title": "Newsletter",
+      "link": "/#newsletter"
+    }
+
+  ]
+}

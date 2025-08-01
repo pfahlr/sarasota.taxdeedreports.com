@@ -1,0 +1,58 @@
+{
+  "title": "North Port Tax Deed & Surplus Fund Leads | Tax Deed Case Intel",
+  "description": "Weekly real estate tax deed surplus fund leads from counties throughout North Port. CSV delivery with owner names, property infomation, surplus amounts, sale dates, and court documents.",
+  "social_image": "/images/sarasota-social.jpg",
+  "keywords":"North Port tax deed records, North Port tax deed leads, North Port real estate,North Port tax deed investor reports, North Port tax surplus recovery, North Port tax deed auctions, surplus claim data, property surplus florida, North Port tax deed case data, North Port realtdm property appraiser data, North Port tax lien investment, North Port surplus funds list, North Port surplus fund information, tax deed information, accessible North Port tax deed reports, csv tax deed data, North Port foreclosure data,North Port tax deed court records, North Port tax deed surplus claims, North Port tax deed CSV",
+  "author":"TaxDeedReports.com",
+  "viewport":"width=device-width, initial-scale=1.0",
+  "robots":"index, follow",
+  "og_description":"High-quality surplus fund case data delivered weekly. Get owner info, surplus amounts, auction data, and PDF records in CSV format.",
+  "og_title":"North Port Tax Deed & Surplus Fund Leads",
+  "og_type":"website",
+  "og_url":"https://taxdeedreports.com",
+  "og_image":"https://taxdeedreports.com/social-preview.jpg",
+  "base_url": "https://taxdeedreports.com",
+  "twitter_desc":"North Port surplus fund leads for tax deed case recovery and investor research.",
+  "twitter_image":"https://taxdeedreports.com/social-preview.jpg",
+  "twitter_card":"https://taxdeedreports.com/summary-image-large.jpg",
+  "twitter_title":"North Port Tax Deed &amp; Surplus Fund Leads",
+
+
+  "demo": {
+    "title": "Need to see it?",
+    "content": "<strong>Get a free sample of several tax deed / surplus case leads from Sarasota County</strong>, complete with owner info, disbursement data, court documents and property info when you sign up for our newsletter!",
+    "cta": "Get Sample Leads"
+  },
+  "theme_color": "#1e3a8a",
+  "nav": [
+    {
+      "title": "Blog",
+      "link": "/blog"
+    },
+    {
+      "title": "What You Get",
+      "link": "/#services"
+    },
+    {
+      "title": "Use Cases",
+      "link": "/#case-studies"
+    },
+    {
+      "title": "Pricing",
+      "link": "/#pricing"
+    }
+  ],
+
+  "social_links": [
+
+    {
+      "title": "FAQ",
+      "link": "/#faq"
+    },
+    {
+      "title": "Newsletter",
+      "link": "/#newsletter"
+    }
+
+  ]
+}
