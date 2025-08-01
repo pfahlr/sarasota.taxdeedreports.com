@@ -7,9 +7,9 @@
     }
  </style>
 
-  <div id="radar-container"></div>
+<div id="radar-container"></div>
 
-  <script>
+<script>
   function createRadar({ containerId, width = 100, height = 100, blips = [] }) {
   const canvas = document.createElement("canvas");
   canvas.width = width;
@@ -91,7 +91,6 @@
         ctx.fill();
       }
     });
-
     ctx.restore();
   }
 
@@ -102,18 +101,17 @@
     angle += 0.01;
     requestAnimationFrame(animate);
   }
-
   animate();
 }
 
-    createRadar({
-      containerId: "radar-container",
-      width: 256,
-      height: 256,
-      blips: [
-        { x: 15, y: 10 },
-        { x: -10, y: 20 },
-        { x: 5, y: -18 },
-      ],
-    });
-  </script>
+createRadar({
+  containerId: "radar-container",
+  width: 256,
+  height: 256,
+  blips: [
+    { x: 15, y: 10 },
+    { x: -10, y: 20 },
+    { x: 5, y: -18 },
+  ],
+});
+</script>

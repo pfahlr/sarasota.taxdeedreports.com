@@ -5,7 +5,7 @@
   },
   {
     "question": "What formats do you deliver leads in?",
-    "answer": "We provide data in clean CSV format with parsed fields (case number, surplus amount, owner name/address, and document links). We can provide this data in other formats if you need.<br/><br/>Don't hesitate to ask. If it's a simple fix, we can likely provide our data formatted to your specifications free of charge.<br/><br/>We're also able to fulfill more complex customization requests on a contract basis.<br/><br/>Send us a message, let's talk!"
+    "answer": "We provide data in clean CSV format with parsed fields (case number, surplus amount, owner name/address, and document links). We can provide this data in other formats if you need.<br/><br/>Don't hesitate to ask. If it's a simple fix, we can likely provide our data formatted to your specifications free of charge.<br/><br/>We're also able to fulfill more complex customization requests on a contract basis.<br/><br/>Send us a message... <a href=\"mailto:contact@taxdeedreports.com\">contact@taxdeedreports.com</a>  or call... let's talk! <a href=\"tel:+19416671927\">941.667.1927</a>"
   },
   {
     "question": "Are the documents included?",
@@ -18,5 +18,14 @@
   {
     "question": "Can I cancel anytime?",
     "answer": "Absolutely. There's no long-term commitment — you can cancel your subscription at any time from your account settings or by contacting support."
+  },
+  {
+    "question": "That data seems like it would be valuable, but it doesn't really fit with my particular business model, what would be useful to me is...",
+    "answer": "Please let us know! You can contract us to develop a custom data collection script for just about anything... and I mean *ANYTHING* the development tools I have available to me now, along with AI models has made it possible to automate the aggregation of data that just a few years ago would have been impossible. It's quite possible I can build you something no one else has yet. Imagine the sort of advantage that would give you...<br/><br/>Send us a message <a href=\"mailto:contact@taxdeedreports.com\">contact@taxdeedreports.com</a> Or call... Let's talk!...  <a href=\"tel:+19416671927\">941.667.1927</a>"
+  },
+  {
+    "question": "Can you X with Y?",
+    "answer": "I have nearly 2 decades experience in software engineering for the internet. So, whatever your question is... the answer is most likey, YES... And YES... I can build you a nice looking website, fully SEOed, should completely give your local comepetition a run for their money.<br/><br/>Send us a message...  <a href=\"mailto:contact@taxdeedreports.com\">contact@taxdeedreports.com</a>... or call... let's talk. <a href=\"tel:+19416671108\">941.667.1927</a>"
+
   }
 ]
