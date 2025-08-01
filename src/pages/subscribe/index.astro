@@ -3,11 +3,12 @@
 import Layout from "../../layouts/Layout.astro"
 import SubscribeSection from "../../components/SubscribeSection.astro";
 import NewsletterSectionExternalForm from "../../components/NewsletterSectionExternalForm.astro"
-import newsletter from "../../data/newsletter.json"
+import newsletter from "/src/data/newsletter.json"
+import global_settings from "/src/data/global_settings.json"
 
 ---
 <div>
-<Layout title="Subscribe Today">
+<Layout title="Subscribe Today" global_settings={global_settings}>
 
 <SubscribeSection/>
 
