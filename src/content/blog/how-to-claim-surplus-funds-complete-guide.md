@@ -1,9 +1,9 @@
 ---
 title:  "How to Claim Sarasota Surplus Funds: A Complete Guide"
-pubDate: 'September 26 2023'
+pubDate: 'July 28 2025'
 keywords: "Sarasota surplus funds, surplus claim data, surplus recovery service"
-updatedDate: 'May 20 2025'
-description: "description" 
+updatedDate: 'August 5 2025'
+description: "Learn how to find and claim Sarasota County surplus funds after tax deed sales. Step-by-step guide for owners, heirs, and recovery pros." 
 ---
 When properties are sold at tax deed auctions in Sarasota County, Florida, the final bid often exceeds what was owed in taxes. The leftover balance is known as a **surplus fund**, and in many cases, that money legally belongs to the former owner—or their heirs, lienholders, or creditors.
 
