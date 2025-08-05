@@ -3,6 +3,7 @@ import Logo from '../assets/theme-images/logo.svg'
 import LogoText from '../assets/theme-images/logo-text.svg'
 import RadarAnimation from './RadarAnimation.astro';
 const { settings } = Astro.props
+const currentYear = new Date().getFullYear();
 ---
 <footer class="@container bs-container my-24 font-semibold text-bs-foreground-dark [&_a]:hover:text-bs-foreground-light [&_a]:transition-color [&_a]:duration-150" id="contact">
   <!-- Wrapper -->
@@ -78,16 +79,16 @@ const { settings } = Astro.props
           </div>
         </div> <! -- /END GRID DEPTH 3/4 -->
 
-        <div class="" style="width:256px;">
-          <LogoText width="256" height=256"/>
+        <div style="width:256px;">
+          <LogoText width="256" height="256"></LogoText>
         </div>
       </div> <! -- /END GRID DEPTH 2 -->
    </div> <! -- /END GRID DEPTH 1 -->
   <!-- Colophon -->
   <aside class="bs-container">
       <nav class="flex gap-4 justify-center pt-16 md:pt-24 text-xs">
-        <!-- Copyright/Date -->
-        <a href="https://newliteracy.online/">newliteracy technology consultants</a>
+        <div><span class="text-rose-800">&copy;{ currentYear }</span> <a class="text-rose-800" href="https://taxdeedreports.com">TaxDeedReports.com</a></div>
+        <div><span class="text-fuchsia-800">developed by&nbsp;&nbsp;&nbsp;</span> <a class="text-sky-800" href="https://newliteracy.online/">New Literacy Technology Consultants</a></div>
       </nav>
   </aside>
 </footer>

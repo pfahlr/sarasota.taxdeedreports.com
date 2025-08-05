@@ -1,0 +1,52 @@
+---
+import { Font } from 'astro:assets';
+import '/src/assets/css/global.css'
+import "/src/assets/css/base.css"
+import "/src/assets/css/typography.css"
+import "/src/assets/css/layout.css"
+import "/src/assets/css/buttons.css"
+import TrackingScripts from "/src/components/TrackingScripts.astro";
+const {  description, keywords, title, url, global_settings, structured_data } = Astro.props;
+
+
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{ title ?? global_settings.title }</title>
+    <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="TaxDeedReports.com" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <meta name="description" content={ description ?? global_settings.description } />
+    <meta name="theme-color" content={ global_settings.theme_color } />
+    <meta name="keywords" content={ keywords ?? global_settings.keywords }/>
+    <meta name="author" content={ global_settings.author } >
+    <meta name="viewport" content={ global_settings.viewport } >
+    <meta name="robots" content={ global_settings.robots } >
+    <meta property="og:title" content={ title ?? global_settings.og_title } >
+    <meta property="og:description" content={ description ?? global_settings.og_description } >
+    <meta property="og:image" content={ global_settings.og_image }>
+    <meta property="og:type" content={ global_settings.og_type }>
+    <meta property="og:url" content={ url ?? global_settings.og_url }>
+    <meta name="twitter:card" content={ global_settings.twitter_card }>
+    <meta name="twitter:title" content={ title ?? global_settings.twitter_title }>
+    <meta name="twitter:description" content={ description ?? global_settings.twitter_description }>
+    <meta name="twitter:image" content={ global_settings.twitter_image }>
+    
+    <Font cssVariable="--font-inter" preload />
+    <Font cssVariable="--font-inter-display" preload />
+
+    {structured_data && <script type="application/ld+json" set:html={JSON.stringify(structured_data)}></script>}
+
+    <TrackingScripts/>
+
+    <slot/>
+    
+    </head>

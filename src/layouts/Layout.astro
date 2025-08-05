@@ -1,65 +1,19 @@
 ---
-
-import '../assets/css/global.css'
-import "../assets/css/base.css"
-import "../assets/css/typography.css"
-import "../assets/css/layout.css"
-import "../assets/css/buttons.css"
-
-import { Font } from 'astro:assets';
+import BaseHead from "/src/components/BaseHead.astro";
 
 import Image from "astro/components/Image.astro"
-import bg_image from "../assets/theme-images/hero-image.jpg"
+import bg_image from "/src/assets/theme-images/hero-image.jpg"
 
+import DialogModalMC from "/src/components/DialogModalMC.astro"
+import FooterMain from "/src/components/FooterMain.astro"
+import HeaderMain from "/src/components/HeaderMain.astro"
+import BubbleBackground from "/src/components/BubbleBackground.astro";
 
-import DialogModalMC from "../components/DialogModalMC.astro"
-import FooterMain from "../components/FooterMain.astro"
-import HeaderMain from "../components/HeaderMain.astro"
-import BubbleBackground from "../components/BubbleBackground.astro";
-const { title, description, keywords, url, global_settings } = Astro.props
-
+const { title, description, keywords, url, global_settings, structured_data } = Astro.props
 ---
-
-<html lang="en">
-
-  <head>
-
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-
-    <title>{ title ?? global_settings.title }</title>
-    <link rel="sitemap" href="/sitemap-index.xml" />
-
-    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="TaxDeedReports.com" />
-    <link rel="manifest" href="/favicon/site.webmanifest" />
-
-    <meta name="description" content={ description ?? global_settings.description } />
-    <meta name="theme-color" content={ global_settings.theme_color } />
-    <meta name="keywords" content={ keywords ?? global_settings.keywords }/>
-    <meta name="author" content={ global_settings.author } >
-    <meta name="viewport" content={ global_settings.viewport } >
-    <meta name="robots" content={ global_settings.robots } >
-    <meta property="og:title" content={ title ?? global_settings.og_title } >
-    <meta property="og:description" content={ description ?? global_settings.og_description } >
-    <meta property="og:image" content={ global_settings.og_image }>
-    <meta property="og:type" content={ global_settings.og_type }>
-    <meta property="og:url" content={ url ?? global_settings.og_url }>
-    <meta name="twitter:card" content={ global_settings.twitter_card }>
-    <meta name="twitter:title" content={ global_settings.twitter_title }>
-    <meta name="twitter:description" content={ description ?? global_settings.twitter_description }>
-    <meta name="twitter:image" content={ global_settings.twitter_image }>
-    
-    <Font cssVariable="--font-inter" preload />
-    <Font cssVariable="--font-inter-display" preload />
-  
-  </head>
-
-  <body id="top">
-
+<BaseHead title={title} description={description} keywords={keywords} url={url}  global_settings={global_settings} structured_data={structured_data}>
+</BaseHead>
+<body id="top">
     <!-- Skip link -->
     <a class="fixed -top-20 focus-visible:top-0 p-3 bg-black/90 transition-all duration-300" href="#main">Skip to content</a>
     <BubbleBackground/>
@@ -77,7 +31,6 @@ const { title, description, keywords, url, global_settings } = Astro.props
 
     <!-- Footer -->
     <FooterMain settings={ global_settings } />
-
-  </body>
+</body>
 </html>
 
