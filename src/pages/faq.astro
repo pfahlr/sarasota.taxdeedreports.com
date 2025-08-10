@@ -13,18 +13,13 @@ import newsletter from "../data/newsletter.json"
 
 const title = "Frequently Asked Questions (FAQ) | "+global_settings.site_title
 
-
 const faq_sd = faq.map((item) => {return {"@type":"Question","name":item.question, "acceptedAnswer":{"@type":"Answer", "text":item.answer}};});
-
-console.log(faq_sd);
 
 const structured_data =   {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity":faq_sd
 }
-console.log(structured_data);
-
 
 ---
 

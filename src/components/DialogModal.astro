@@ -18,7 +18,6 @@ const messageDiv = document.getElementById('form-message');
     // Note: Astro supports `actions` for server-side form handling,
     // but for Cloudflare Pages Functions serving an external API call,
     // using fetch() is the standard approach.
-    console.log(formData)
     try {
       const response = await fetch('/api/mailchimp-subscribe', {
         method: 'POST',

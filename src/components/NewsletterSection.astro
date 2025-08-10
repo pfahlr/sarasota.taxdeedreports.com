@@ -22,7 +22,6 @@ const messageDiv = document.getElementById('form-message');
     var nameelem = document.getElementById('nl-name');
     varemailelem = document.getElementById('nl-email');
     formDatas = {'name':nameelem.value, 'email':emailelem.value};
-    console.log(formDatas);
     try {
       const response = await fetch('/api/mailchimp-subscribe', {
         method: 'POST',

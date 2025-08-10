@@ -12,8 +12,6 @@ const blog = defineCollection({
   })
 });
 
-console.log('content config');
-console.log(blog);
 export const collections = {
   blog,
 };
