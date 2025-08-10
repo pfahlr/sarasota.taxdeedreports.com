@@ -10,3 +10,12 @@
 body {
   @apply bg-bs-surface-1 text-bs-foreground-light font-body selection:text-black selection:bg-amber-300;
 }
+
+@layer components {
+  .faq-block h3 {
+    @apply font-semibold text-lg mb-2;
+  }
+  .aside-block {
+    @apply bg-blue-50;
+  }
+}

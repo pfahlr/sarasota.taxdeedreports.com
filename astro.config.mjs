@@ -1,4 +1,6 @@
 import { defineConfig } from 'astro/config'
+import remarkDirective from 'remark-directive';
+import remarkFaqAside from './remark-faq-aside.js';
 import tailwindcss from '@tailwindcss/vite'
 import cloudflare from '@astrojs/cloudflare';
 import sitemap from '@astrojs/sitemap';
@@ -9,6 +11,12 @@ export default defineConfig({
   adapter:cloudflare(),
   vite: {
     plugins: [tailwindcss()]
+  },
+  markdown: {
+    remarkPlugins: [
+      remarkDirective,
+      remarkFaqAside
+    ]
   },
   experimental: {
     fonts: [{

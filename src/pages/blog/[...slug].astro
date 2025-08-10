@@ -26,7 +26,7 @@ const title = post.data.title+" | "+global_settings.title;
 const keywords = post.data.keywords;
 const description = post.data.description;
 
-const structured_data =  {
+var structured_data =  {
       "@context": "https://schema.org",
       "@type": "NewsArticle",
       "headline": title,
@@ -43,9 +43,14 @@ const structured_data =  {
 const metadata = {
     'page_image': global_settings.base_url + post.data.image
 }
+
+if(post.rendered.metadata.frontmatter.faqSchema){
+    structured_data = [structured_data, post.rendered.metadata.frontmatter.faqSchema]
+}
+
 ---
 
-<PageLayout data={post.data} title={title} keywords={keywords} description={description} structured_data={structured_data}>
+<PageLayout data={post.data} post={post.rendered} title={title} keywords={keywords} description={description} structured_data={structured_data}>
 
     <BlogPost {...post.data} data={post.data}>
 	    <Content />
