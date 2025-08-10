@@ -10,6 +10,36 @@
 body {
   @apply bg-bs-surface-1 text-bs-foreground-light font-body selection:text-black selection:bg-amber-300;
 }
+table 
+{
+  margin:2em 0;
+}
+table td {
+  text-align: left;
+  border: 1px solid #fff;
+  padding: 5px;
+}
+table th {
+  border: 1px solid #fff;
+  padding: 5px;
+  text-align: left;
+  font-weight: 900;
+  background: #333;
+}
+
+.faq-item {
+  margin-bottom:1em;
+}
+
+.faq-a {
+  padding:.5em;
+  margin-top:.5em;
+  background: #334;
+}
+
+.faq-block {
+  margin-top:1em;
+}
 
 @layer components {
   .faq-block h3 {

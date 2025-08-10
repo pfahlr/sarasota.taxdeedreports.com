@@ -153,38 +153,23 @@ With the right tools, you can skip the tedious manual searches and focus on **re
 
 *TaxDeedReports.com – Florida tax deed surplus leads, parsed and delivered.*
 
+## Frequently Asked Questions
+
 :::faq
-
 ### What are Sarasota County surplus funds?
-
 Surplus funds are the extra money left after a Sarasota County tax deed sale when the winning bid exceeds the taxes owed, fees, and costs. Florida law (Statute §197.582) outlines who can claim these funds.
-
 ### How do I know if there are surplus funds in my case?
-
 You can search the Sarasota Clerk of Court’s tax deed records or use a **pre-compiled surplus funds list** from [TaxDeedReports.com](https://taxdeedreports.com) to instantly see surplus balances for each case.
-
 ### Who gets Sarasota tax deed surplus funds first?
-
 Governmental lienholders are paid first, followed by non-governmental lienholders, then the former property owner or their heirs. Claims are processed in this priority order after the 120-day claim window closes.
-
 ### How long do I have to claim Sarasota surplus funds?
-
 You have **120 days** from the date of the Notice of Surplus Funds to submit a claim. If no one claims the funds within one year, they are sent to the State of Florida’s unclaimed property division.
-
 ### Can I claim Sarasota surplus funds if I’m not the owner?
-
 Yes, if you are a lienholder, estate representative, or a licensed surplus recovery service with written authorization, you may be eligible to file a claim.
-
 ### How long does it take to get Sarasota surplus funds after filing?
-
 The Clerk and County Attorney’s office usually process surplus claims within **4–7 months** after the 120-day claim period ends, depending on case complexity and competing claims.
-
 ### Where can I find a Sarasota surplus funds CSV?
-
 You can request public records from the Clerk’s office or subscribe to a **weekly CSV feed** from [TaxDeedReports.com](https://taxdeedreports.com) with surplus balances, owner names, addresses, and direct document links.
-
-### Is a surplus recovery service worth it?  
-
-If you want to avoid manually reviewing dozens of court documents and property appraiser records, a recovery service or data platform can save hours of research and help you act on leads faster.
-
+### Is a data service worth it? 
+If you want to avoid manually reviewing dozens of court documents and property appraiser records, a data platform can save hours of research and help you act on leads faster. 
 :::

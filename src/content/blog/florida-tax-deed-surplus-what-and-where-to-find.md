@@ -13,24 +13,31 @@ When the winning bid **exceeds the amount owed** for taxes, interest, and fees, 
 
 ---
 
-### How Surplus Funds Are Created
+## How Surplus Funds Are Created
 
-1. **Tax Certificates** – Counties first sell tax certificates to investors. These certificates represent unpaid property taxes and accrue interest until redeemed or converted into a tax deed application.
-2. **Tax Deed Application** – If taxes remain unpaid after a set period, the certificate holder can apply for the property to be sold at a public auction.
-3. **Auction Sale** – The property is auctioned to the highest bidder. The opening bid usually covers:
-   - Unpaid taxes
-   - Clerk and advertising fees
-   - Any municipal liens or costs  
-   Any amount bid **above** this opening bid becomes the surplus.
-4. **Surplus Distribution** – After the sale, the county clerk calculates the surplus and holds it in trust while notifying parties with potential claims.
+
+...
+
+**Tax Certificates** – Counties first sell tax certificates to investors. These certificates represent unpaid property taxes and accrue interest until redeemed or converted into a tax deed application.
+
+**Tax Deed Application** – If taxes remain unpaid after a set period, the certificate holder can apply for the property to be sold at a public auction.
+
+**Auction Sale** – The property is auctioned to the highest bidder. The opening bid usually covers:
+<br/>
+&bull; Unpaid taxes<br/>
+&bull; Clerk and advertising fees<br/>
+&bull; Any municipal liens or costs<br/>
+&bull; Any amount bid **above** this opening bid becomes the surplus.<br/>
+
+**Surplus Distribution** – After the sale, the county clerk calculates the surplus and holds it in trust while notifying parties with potential claims.
 
 ---
 
-### The Process Varies by County
+## The Process Varies by County
 
 While the core steps are similar across Florida, **county-specific rules** can affect timelines, claimant priorities, and the ease of finding surplus cases.  
 
-#### County Process Quick Reference
+### County Process Quick Reference
 
 | County     | Surplus Posting Method | Claim Deadline | Notes |
 |------------|------------------------|----------------|-------|
@@ -45,7 +52,7 @@ While the core steps are similar across Florida, **county-specific rules** can a
 
 ---
 
-### Challenges in Locating Surplus Opportunities
+## Challenges in Locating Surplus Opportunities
 
 Manually finding surplus cases is time-consuming:
 - You must navigate individual county Clerk of Court systems, many of which are slow and inconsistent.
@@ -56,7 +63,7 @@ This fragmented process can make it easy to miss lucrative opportunities — unl
 
 ---
 
-### How TaxDeedReports.com Solves This
+## How TaxDeedReports.com Solves This
 
 At **TaxDeedReports.com**, we gather and normalize **tax deed case data across multiple Florida counties**. Our system not only flags surplus cases but also cross-references them with **Property Appraiser records** to provide:
 - Owner names and mailing addresses
@@ -69,7 +76,7 @@ By automating the discovery and enrichment process, we **save you hours of tedio
 
 ---
 
-### Why Acting Fast Matters
+## Why Acting Fast Matters
 
 Surplus funds can be claimed by rightful owners or lienholders — but **only within a set timeframe**. Once the claim period expires, the county turns the money over to the state’s unclaimed funds program, making recovery far more difficult.
 
@@ -80,7 +87,7 @@ With weekly updated reports from **TaxDeedReports.com**, you’ll know:
 
 ---
 
-### Final Word
+## Final Word
 
 The **Florida tax deed surplus market** rewards those who are informed and proactive. While the rules vary by county, the fundamentals are the same:  
 Identify surplus cases quickly, verify owner and lienholder information, and make your outreach before the claim window closes.

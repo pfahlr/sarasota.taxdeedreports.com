@@ -1,9 +1,10 @@
 import { defineConfig } from 'astro/config'
 import remarkDirective from 'remark-directive';
-import remarkFaqAside from './remark-faq-aside.js';
 import tailwindcss from '@tailwindcss/vite'
 import cloudflare from '@astrojs/cloudflare';
 import sitemap from '@astrojs/sitemap';
+import { faqPlugin } from 'remark-markdown-extensions';
+import { asidePlugin } from 'remark-markdown-extensions';
 
 export default defineConfig({
   site: 'https://taxdeedreports.com',
@@ -15,8 +16,8 @@ export default defineConfig({
   markdown: {
     remarkPlugins: [
       remarkDirective,
-      remarkFaqAside
-    ]
+      [faqPlugin, {className:'border border-0'}]
+    ] 
   },
   experimental: {
     fonts: [{
