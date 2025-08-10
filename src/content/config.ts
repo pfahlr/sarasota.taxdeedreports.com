@@ -6,9 +6,12 @@ const blog = defineCollection({
     title: z.string(),
     date: z.date(),
     description: z.string(),
-    draft: z.boolean().optional()
+    draft: z.boolean().optional(),
+    image: z.string().optional(),
+    image_alt: z.string().optional()
   })
 });
+
 console.log('content config');
 console.log(blog);
 export const collections = {

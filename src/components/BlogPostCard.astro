@@ -1,16 +1,27 @@
 ---
-const { id, hero, title, pubdate, heroalt, description} = Astro.props;
+const { id, hero, title, pubdate, heroalt, description, data} = Astro.props;
+import { Image } from 'astro:assets';
 import FormattedDate from './FormattedDate.astro';
+console.log(data);
 ---
 <article>
-  <section class="post-title">
-  <a href={`/blog/${id}/`}>
-    <h2>{title}</h3>  
-  </a>
-  <FormattedDate date={pubdate} />
-  </section>
-  <section class="post-description">
-    <p >{description}</p>
-  </section>
-  <a href={`/blog/${id}/`} class="">Read More</a>		
+
+  <div class="grid grid-cols-4 lg:grid-cols-6">
+  
+    <div class="post-image col-span-4 lg:col-span-2 p-2">
+      {data.image && <Image src={data.image} alt={data.image_alt}/> }
+    </div>
+    <div class="post-description col-span-4 p-2">
+      <section class="post-title">
+      <a href={`/blog/${id}/`}>
+        <h2>{title}</h3>  
+      </a>
+      <FormattedDate date={pubdate} />
+      </section>
+      <p >{description}</p>
+        <a href={`/blog/${id}/`} class="">Read More</a>		
+
+    </div>
+  </div>
+  
 </article> 

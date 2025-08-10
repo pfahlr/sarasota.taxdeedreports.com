@@ -9,9 +9,9 @@ import FooterMain from "/src/components/FooterMain.astro"
 import HeaderMain from "/src/components/HeaderMain.astro"
 import BubbleBackground from "/src/components/BubbleBackground.astro";
 
-const { title, description, keywords, url, global_settings, structured_data } = Astro.props
+const { title, description, keywords, url, global_settings, metadata, structured_data } = Astro.props
 ---
-<BaseHead title={title} description={description} keywords={keywords} url={url}  global_settings={global_settings} structured_data={structured_data}>
+<BaseHead title={title} description={description} keywords={keywords} url={url} metadata={metadata} global_settings={global_settings} structured_data={structured_data}>
 </BaseHead>
 <body id="top">
     <!-- Skip link -->

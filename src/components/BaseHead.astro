@@ -6,7 +6,7 @@ import "/src/assets/css/typography.css"
 import "/src/assets/css/layout.css"
 import "/src/assets/css/buttons.css"
 import TrackingScripts from "/src/components/TrackingScripts.astro";
-const {  description, keywords, title, url, global_settings, structured_data } = Astro.props;
+const {  description, keywords, title, url, global_settings, metadata, structured_data } = Astro.props;
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -30,13 +30,13 @@ const {  description, keywords, title, url, global_settings, structured_data } =
     <meta name="robots" content={ global_settings.robots } >
     <meta property="og:title" content={ title ?? global_settings.og_title } >
     <meta property="og:description" content={ description ?? global_settings.og_description } >
-    <meta property="og:image" content={ global_settings.og_image }>
+    <meta property="og:image" content={ (metadata && metadata.page_image) ? metadata.page_image : global_settings.og_image }>
     <meta property="og:type" content={ global_settings.og_type }>
     <meta property="og:url" content={ url ?? global_settings.og_url }>
     <meta name="twitter:card" content={ global_settings.twitter_card }>
     <meta name="twitter:title" content={ title ?? global_settings.twitter_title }>
     <meta name="twitter:description" content={ description ?? global_settings.twitter_description }>
-    <meta name="twitter:image" content={ global_settings.twitter_image }>
+    <meta name="twitter:image" content={ (metadata && metadata.page_image) ? metadata.page_image : global_settings.twitter_image }>
     
     <Font cssVariable="--font-inter" preload />
     <Font cssVariable="--font-inter-display" preload />

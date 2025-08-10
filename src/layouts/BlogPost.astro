@@ -1,13 +1,12 @@
 t---
 import FormattedDate from '../components/FormattedDate.astro';
+import { Image } from 'astro:assets';
 const { data } = Astro.props;
 ---
 <article class="blog-post max-w-[92vw] lg:max-w-4xl mx-auto bs-mt-md px-5 py-8 md:p-20 flex flex-col gap-3 justify-between border rounded-md bg-bs-surface-2 border-bs-surface-3 [&_a]:underline [&_a]:underline-offset-4 [&_a]:decoration-bs-foreground-dark/80 [&_a]:hover:decoration-bs-foreground-light ">
 	 <section class="text-zinc-100 post-header">
 
-	  <div class="box-content p-1 m-1 " >
-		  {data.heroImage && <img width="100%" src={data.heroImage} alt=""  class="inline"/>}
-	  </div>
+
 		<div class="title">
 		<h1 class="sm:text-6xl lg:text-8xl m-2">{data.title}</h3>
 			<div class="date sm:text-xl lg:text-2xl m-2 mb-10 text-slate-400">
@@ -22,8 +21,15 @@ const { data } = Astro.props;
 			</div>
 		</div>
 		</section>
-		
-		<section class="post-body m-2 text-slate-200 post-body sm:text-base lg:text-lg ">
-		  <slot />
+		<section>
+		<div class="box-content p-1 m-1 " >
+		{data.image && <Image src={data.image} alt={data.image_alt}/> }
+	  </div>
 		</section>
+		<section class="post-body m-2 text-slate-200 post-body sm:text-base lg:text-lg">
+		
+		  <slot />
+		
+		<section>
+		
 </article>

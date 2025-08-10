@@ -12,11 +12,13 @@ try {
   console.error("Error loading blog posts:", err);
 }
 const title = "Blog |"+global_settings.title;
+
+
 ---
 <BlogLayout title ={title} >
 <PostList> 
 	{posts.map(item => (
-		<BlogPostCard id={item.id}  description={item.data.description} pubdate={item.data.pubDate} title={item.data.title}  />
+		<BlogPostCard id={item.id} data={item.data} description={item.data.description} pubdate={item.data.pubDate} title={item.data.title}  />
 	))}
 </PostList>
 </BlogLayout>

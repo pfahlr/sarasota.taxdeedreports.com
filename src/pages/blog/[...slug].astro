@@ -40,6 +40,9 @@ const structured_data =  {
         }]
     }
 
+const metadata = {
+    'page_image': global_settings.base_url + post.data.image
+}
 ---
 
 <PageLayout data={post.data} title={title} keywords={keywords} description={description} structured_data={structured_data}>
